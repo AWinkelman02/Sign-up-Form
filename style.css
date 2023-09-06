@@ -1,0 +1,172 @@
+body{
+    display: flex;
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.main-img{
+    width: 40%;
+    height: 100vh;
+    background-size: 100% 100%;
+    background-image: url(images/gamebackground.png);
+}
+
+.banner{
+    position: relative;
+    top: 20vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.banner img{
+    width: 17%;
+    height: auto;
+}
+
+.banner h1{
+    font-size: 4rem;
+    color: white;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 7vw 0vw 7vw;
+    gap: 10vw;
+    position: relative;
+    top: 8vh;
+    left: 13vw;
+}
+
+.buttons button{
+    all: unset;
+    color: #cf4465;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+}
+
+.buttons button:hover{
+    border-bottom: #cf4465 1px solid;
+}
+
+.buttons button.selected{
+    border-bottom: #cf4465 1px solid;
+}
+
+.main{
+    width: 60%;
+    height: 100vh;
+}
+
+.main p{
+    font-weight: bold;
+    font-size: 1.5rem;
+    position: relative;
+    top: 5vh;
+    width: 70%;
+    padding: 2vh;
+    left: 2vh;
+}
+
+.form-box{
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    position: relative;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 30vh;
+}
+
+.inputs{
+    display: flex;
+    position: relative;
+    left: 2vw;
+    gap: 3vw;
+    width: 90%;
+}
+
+.form-box h2,
+.form-box button{
+    position: relative;
+    left: 2vw;
+}
+
+h2{
+    position: relative;
+    width: 90%;
+}
+
+.form-box button{
+    margin: 2vh 0vh 2vh 0vh;
+    border-radius: 8px;
+    width: 8vw;
+    height: 3.5vh;
+    background-color: #cf4465;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+input{
+    margin-bottom: 2vh;
+    border-radius: 5px;
+    height: 2vh;
+    border: 1px gray solid;
+}
+
+input:focus{
+    border-color: rgb(83, 83, 233);
+}
+
+.flip-card{
+    background-color: transparent;
+    height: 30vh;
+    position: relative;
+    top: 10vh;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+  
+.flip-card-inner.flipped{
+    transform: rotatex(180deg);
+}
+
+.flip-card-inner.unflipped{
+    transform: rotatex(180deg);
+}
+  
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.flip-card-back {
+    transform: rotatex(180deg);
+}
+

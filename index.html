@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="shortcut icon" href="images/favicon-16x16.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bx main-img">
+        <div class="banner">
+            <img src="images/controller.png" alt="logo" class="controller">
+            <h1 class="gg">GG</h1>
+        </div>
+    </div>
+    <div class="main">
+        <p>This is not a real sign up form! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore deleniti sed, explicabo debitis eius, cum dolore dicta corporis nostrum ea eveniet at natus? Rerum aut ut eaque quod fugiat assumenda!</p>
+        <p>You know you want to.</p>
+        <div class="buttons">
+            <button type="button" id="register">Register</button>
+            <button type="button" id="login">Login</button>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <form action="#" method="get">
+                        <div class="bx form-box">
+                            <h2>Lets do this!</h2>
+                            <div class="inputs">
+                                <div class="container">
+                                    <label for="fname">FIRST NAME</label>
+                                    <input type="text" name="fname" id="fname" required>
+                                    <label for="email">EMAIL</label>
+                                    <input type="email" name="email" id="email" required>
+                                    <label for="password">PASSWORD</label>
+                                    <input type="password" name="password" id="password" required minlength="8">
+                                </div>
+                                <div class="container">
+                                    <label for="lname">LAST NAME</label>
+                                    <input type="text" name="lname" id="lname" required>                   
+                                    <label for="number">PHONE NUMBER</label>
+                                    <input type="text" name="number" id="number" required>
+                                    <label for="confirm">CONFIRM PASSWORD</label>
+                                    <input type="password" name="confirm" id="confirm" required minlength="8">
+                                </div>
+                            </div>
+                            <button type="submit">Create Account</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="flip-card-back">
+                    <form action="#" method="get">
+                        <div class="bx form-box">
+                            <h2>Welcome Back!</h2>
+                            <div class="inputs">
+                                <div class="container">
+                                    <label for="email">EMAIL</label>
+                                    <input type="email" name="email" id="email" required>
+                                </div>
+                                <div class="container">
+                                    <label for="password">PASSWORD</label>
+                                    <input type="password" name="password" id="password" required>
+                                </div>
+                            </div>
+                            <button type="submit">Sign In</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
